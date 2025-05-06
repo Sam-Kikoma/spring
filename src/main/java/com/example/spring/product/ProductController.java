@@ -1,13 +1,12 @@
 package com.example.spring.product;
 
+import com.example.spring.exceptions.ProductNotFoundException;
+import com.example.spring.product.model.ErrorResponse;
 import com.example.spring.product.model.Product;
 import com.example.spring.product.model.ProductDTO;
 import com.example.spring.product.model.UpdateProductCommand;
-import com.example.spring.product.services.CreateProductService;
-import com.example.spring.product.services.DeleteProductService;
-import com.example.spring.product.services.GetProductService;
-import com.example.spring.product.services.GetProductsService;
-import com.example.spring.product.services.UpdateProductService;
+import com.example.spring.product.services.*;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,13 +19,15 @@ public class ProductController {
     private final UpdateProductService updateProductService;
     private final DeleteProductService deleteProductService;
     private final GetProductsService getProductsService;
+    private final SearchProductService searchProductService;
 
-    public ProductController(CreateProductService createProductService, GetProductService getProductService,UpdateProductService updateProductService, DeleteProductService deleteProductService, GetProductsService getProductsService) {
+    public ProductController(CreateProductService createProductService, GetProductService getProductService, UpdateProductService updateProductService, DeleteProductService deleteProductService, GetProductsService getProductsService, SearchProductService searchProductService) {
         this.createProductService = createProductService;
         this.getProductService = getProductService;
         this.updateProductService = updateProductService;
         this.deleteProductService = deleteProductService;
         this.getProductsService = getProductsService;
+        this.searchProductService = searchProductService;
     }
 
     @PostMapping("/product")
@@ -53,5 +54,10 @@ public class ProductController {
     @DeleteMapping("/product/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Integer id){
         return deleteProductService.execute(id);
+    }
+
+    @GetMapping("/product/search")
+    public ResponseEntity<List<ProductDTO>> searchProductByName(@RequestParam String name){
+        return searchProductService.execute(name);
     }
 }
