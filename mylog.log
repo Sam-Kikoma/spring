@@ -1,0 +1,44 @@
+2025-05-17T03:37:36.177+02:00  INFO 345877 --- [spring] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-17T03:37:36.311+02:00  INFO 345877 --- [spring] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-17T03:37:36.475+02:00  INFO 345877 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-17T03:37:36.511+02:00  INFO 345877 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-17T03:37:36.571+02:00  INFO 345877 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-05-17T14:43:55.720+02:00  INFO 158914 --- [spring] [restartedMain] com.example.spring.Application           : Starting Application using Java 21.0.7 with PID 158914 (/home/sam/spring/spring/target/classes started by sam in /home/sam/spring/spring)
+2025-05-17T14:43:55.724+02:00  INFO 158914 --- [spring] [restartedMain] com.example.spring.Application           : No active profile set, falling back to 1 default profile: "default"
+2025-05-17T14:43:55.803+02:00  INFO 158914 --- [spring] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-17T14:43:55.804+02:00  INFO 158914 --- [spring] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-17T14:43:57.163+02:00  INFO 158914 --- [spring] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-17T14:43:57.238+02:00  INFO 158914 --- [spring] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 3 JPA repository interfaces.
+2025-05-17T14:43:58.239+02:00  INFO 158914 --- [spring] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-17T14:43:58.254+02:00  INFO 158914 --- [spring] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-17T14:43:58.255+02:00  INFO 158914 --- [spring] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-17T14:43:58.292+02:00  INFO 158914 --- [spring] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-17T14:43:58.293+02:00  INFO 158914 --- [spring] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2487 ms
+2025-05-17T14:43:58.715+02:00  INFO 158914 --- [spring] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-17T14:43:59.148+02:00  INFO 158914 --- [spring] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@793272a4
+2025-05-17T14:43:59.149+02:00  INFO 158914 --- [spring] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-17T14:43:59.192+02:00  INFO 158914 --- [spring] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-17T14:43:59.237+02:00  INFO 158914 --- [spring] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-17T14:43:59.272+02:00  INFO 158914 --- [spring] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-17T14:43:59.556+02:00  INFO 158914 --- [spring] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-17T14:43:59.662+02:00  INFO 158914 --- [spring] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.8
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-17T14:44:00.589+02:00  INFO 158914 --- [spring] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-17T14:44:00.592+02:00  INFO 158914 --- [spring] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-17T14:44:01.247+02:00  WARN 158914 --- [spring] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-17T14:44:01.334+02:00  INFO 158914 --- [spring] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-17T14:44:02.058+02:00  INFO 158914 --- [spring] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 8 endpoints beneath base path '/actuator'
+2025-05-17T14:44:02.852+02:00  INFO 158914 --- [spring] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-17T14:44:03.000+02:00  INFO 158914 --- [spring] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-17T14:44:03.023+02:00  INFO 158914 --- [spring] [restartedMain] com.example.spring.Application           : Started Application in 7.86 seconds (process running for 8.304)
+2025-05-17T14:44:17.123+02:00  INFO 158914 --- [spring] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-17T14:44:17.126+02:00  INFO 158914 --- [spring] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-05-17T14:44:17.135+02:00  INFO 158914 --- [spring] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-17T14:44:17.139+02:00  INFO 158914 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-05-17T14:44:17.162+02:00  INFO 158914 --- [spring] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
